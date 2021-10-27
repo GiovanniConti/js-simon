@@ -1,7 +1,7 @@
 "use Strict"
 
 const numbers = generateRandomNumbers(0, 100);
-console.log("log dell'array numbers");
+// console.log("log dell'array numbers");
 
 alert(`Rememebr these numbers: ${numbers[0]}, ${numbers[1]}, ${numbers[2]}, ${numbers[3]}, ${numbers[4]}`);
 
@@ -13,7 +13,7 @@ function getAndCompareNumbers(){
     for(let i=0; i<numbers.length; i++){
         const userNumber = prompt("Insert a number:");
         userNumbers.push(parseInt(userNumber))
-        console.log("console lo go di userNumbers", userNumbers);
+        // console.log("console lo go di userNumbers", userNumbers);
     }
 
     userNumbers.forEach(number => {
@@ -36,7 +36,7 @@ function generateRandomNumbers(min, max){
         if(!randomArray.includes(randomNumber)){
             randomArray.push(randomNumber);
         }
-        console.log("log di random array", randomArray);
+        // console.log("log di random array", randomArray);
     }
     return randomArray;
 }
